@@ -1,0 +1,336 @@
+/* * {
+  background: #c3b4a1;
+} */
+body {
+  /* background-color: #c4b89c; */
+  background-color: beige;
+  /* color: #82ac7c; */
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.514);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  max-width: 600px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0 0 5px;
+  padding: 10px;
+  text-align: justify;
+  z-index: 10;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 10px;
+  border: 0;
+}
+
+.MuiToolbar-root {
+  background-color: #735151;
+}
+
+div.displayPanels {
+  /* width: 23%; */
+  height: 340px;
+  float: left;
+  color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 2px solid black;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 5px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #adc5af;
+  /* box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2); */
+  min-width: 365px;
+  /* min-width: 32%; */
+  padding: 6px;
+}
+div.displayPanels:hover {
+  z-index: 1;
+  transform: scale(1.05);
+  transition: ease-in 0.1s;
+  background-color: antiquewhite;
+}
+.displayPanels h3 {
+  color: tomato;
+  text-align: center;
+}
+#allJobs {
+  padding: 10px;
+  float: left;
+  border: 2px solid black;
+  margin-right: 5px;
+  margin-left: 10px;
+  position: relative;
+  overflow: overlay;
+  background-color: #e9dcd9;
+  border-radius: 20px 20px 20px 20px;
+  color: black;
+  width: 370px;
+  height: 700px;
+  overflow-y: auto;
+}
+#allJobs h1 {
+  color: #735151;
+}
+#App-header {
+  background-color: #f49d6e;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 300;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 2px;
+  text-align: center;
+}
+.App {
+  text-align: center;
+}
+#jobDisplay {
+  padding-top: 8px;
+  /* background-color: beige; */
+}
+
+.MuiBox-root {
+  /* background-color: beige; */
+}
+.job-groups {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jobCards {
+  display: grid;
+  grid-template-columns: 110px auto;
+  /* height: 110px; */
+  /* border-style: solid;
+      border-width: thin; */
+  white-space: normal;
+  text-align: center;
+  /* line-height: 1px; */
+  background-color: #b4d8da;
+  padding: 5px;
+  /* min-width: 360px; */
+  width: 95%;
+  margin: auto;
+  margin-top: 5px;
+}
+.job-card-header {
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+.job-card-header h3 {
+  margin: 0;
+  padding: 0;
+}
+.job-card-header h4 {
+  grid-column: 1 / 3;
+  margin: 0;
+}
+.job-card-header button {
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(42, 102, 42);
+  color: white;
+  border: 0;
+  align-self: center;
+}
+.job-card-edit {
+  /* margin-left: 10px; */
+  float: right;
+  color: rgb(100, 100, 100);
+  cursor: pointer;
+}
+.job-card-communications {
+  grid-column: 1 / 3;
+  display: grid;
+  cursor: pointer;
+}
+.jobText {
+  padding-top: 15px;
+}
+.cardImage {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 90px;
+  float: left;
+  height: 90px;
+  margin-left: -5%;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.communication {
+  display: grid;
+  grid-template-columns: 35px auto;
+  text-align: left;
+  align-items: center;
+  border: 1px solid grey;
+  margin-top: 10px;
+}
+.communication h4 {
+  margin: 0;
+  padding: 0;
+}
+.communication h4 svg {
+  float: right;
+}
+.communication svg {
+  color: rgb(100, 100, 100);
+}
+#select-button {
+  background-color: #e7d6b5;
+  border: none;
+  color: #442c2e;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+.comment-btn {
+  cursor: pointer;
+}
+.dropdownitem {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+.dropdownitem::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.dropdownitem:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.form-actions input {
+  vertical-align: middle;
+}
+.form-actions svg {
+  float: right;
+  color: rgb(107, 55, 55);
+}
+.star {
+  float: left;
+  margin-left: 0%;
+  cursor: pointer;
+}
+
+.star-color {
+  color: gold;
+}
+
+#add-btn {
+  background-color: orange;
+  color: rgb(0, 0, 0);
+}
+
+.MuiAvatar-circular {
+  margin: 0 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+
+.search-bar .MuiTextField-root {
+  width: 100%;
+}
+
+.search-bar .MuiInput-underline:before {
+  border: none;
+  border-color: blue;
+}
+
+@media (min-width: 600px) {
+  .search-bar {
+    margin: 0 27em;
+    padding: 0 2em;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 0.5%;
+  }
+}
+
+.search-icon {
+  padding-top: 1.2%;
+  padding-right: 1%;
+}
+
+#outlined-password-input {
+  border-radius: 5px 5px 5px 5px;
+}
+
+#username {
+  display: block;
+  margin: 1%;
+}
+
+#password {
+  display: block;
+  margin: 1%;
+}
+
+#new-account {
+  display: block;
+  /* margin-top: 5%;
+  margin-right: 1%; */
+  background-color: orange;
+  color: rgb(0, 0, 0);
+}
+
+.form-actions svg {
+  cursor: pointer;
+}
+
+.form-actions input {
+  cursor: pointer;
+}
